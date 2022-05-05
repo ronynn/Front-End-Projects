@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A product landing page.</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Product Landing Page" />
+  <meta name="keywords" content="game, interactive fiction"/>
+  <meta name="author" content="r01nx" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>  
+
+#header {
+    display:none;
+    justify-content: space-between;
+    top:0;
+    width:50%;
+    z-index: 2;
+}
+
+#header-img {
+    height: 30px;
+    display:none;
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.link {
+    padding: 0 10px;
+}
+
+a {
+  color:gray;
+}
+body {
+    font-family:monospace;
+    text-align:center;
+    color:gray;
+    margin:50px;
+    padding:10px;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 17px #a6a6a6,
+    -8px -8px 17px #ffffff;
+}
+
+#video {
+    height: 50vh;
+    width: 100%;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 17px #a6a6a6,
+    -8px -8px 17px #ffffff;
+}
+
+.video-wrapper {
+    margin-top:
+}
+
+.form-wrapper {
+    color: white;
+}
+
+.form-group {
+    position: relative;
+    max-width: 300px;
+    background-color: white;
+    text-align: left;
+    margin: auto;
+}
+
+.form-control {
+width: calc(100% - 100px);
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+}
+
+.form-control:focus {
+    outline:none;
+}
+
+.form-submit {
+    position: absolute;
+    border: none;
+    right: 5px;
+    top: 5px;
+    border-radius: 3px;
+    background: #56AD81;
+    color: white;
+    padding: 5px 20px;
+    transition-duration: 0.25s;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #header {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .link-wrapper {
+        padding-top: 10px;
+    }
+}
+
+
+</style>
+  
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <img src="nico.png" alt="Nico" id="header-img" />
+            <nav id="nav-bar">
+                <ul class="link-wrapper">
+                    <li class="link">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="link">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                     <li class="download">
+                       <a href="#download" class="nav-link">Download</a>
+                     </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="home" class="section">
+            <div class="home-text">
+              Nimble Brass is a cool game.
+            </div>
+        </div>
+        <div id="about" class="section">
+            <h1>About</h1>
+            Its a game you can play
+
+            <div class="video-wrapper">
+                <h2>Watch Film</h2> 
+            <iframe id ="video" width="80%"src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+
+   <div id="download" class="section">
+     <div class="download">
+       No executable available yet, <a href="https://r01nx.github.io/Game-Jam-Submissions">play online</a>.
+     </div>
+   </div>
+
+            </div>
+            <div class="form-wrapper">
+                <h3>Subscribe to my blog</h3>
+                <form action="#" id="form">
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="username@provider.domain" class="form-control" />
+                        <input type="submit" id="submit" class="form-submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+  
+<!--	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

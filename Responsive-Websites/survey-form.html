@@ -1,0 +1,200 @@
+
+<html>
+
+<head>
+  <title>Interactive Fiction Preferences</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="A Survey of Interactive fiction preferences" />
+  <meta name="keywords" content="text adventures, interactive fiction, games" />
+  <meta name="author" content="r01nx" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+
+body {
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  background-color:#e0e0e0;
+}
+
+
+.container {
+  width: 75%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 10px;
+  padding: 50px;
+  margin-bottom: 20px;
+  border-radius: 27px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 17px #a6a6a6,
+  -8px -8px 17px #ffffff;
+}
+
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-between;
+}
+
+#survey-form #about-you{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+
+.required {
+  color: red;
+}
+
+#survey-form #dropdown {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+#textarea {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+button {
+padding: 1.5em 5em;
+background: #e0e0e0;
+border: none;
+border-radius: .5rem;
+color: #444;
+font-size: 1rem;
+font-weight: 700;
+letter-spacing: .2rem;
+text-align: center;
+outline: none;
+cursor: pointer;
+transition: .2s ease-in-out;
+box-shadow: 8px 8px 17px #a6a6a6,
+-8px -8px 17px #ffffff;
+}
+button:hover {
+box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+-2px -2px 4px rgba(255, 255, 255, .4),
+2px 2px 2px rgba(255, 255, 255, .05),
+2px 2px 4px rgba(0, 0, 0, .1);
+}
+button:active {
+box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+inset -2px -2px 4px rgba(255, 255, 255, .5),
+inset 2px 2px 2px rgba(255, 255, 255, .075),
+inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="title">Which game of mine do you like the most?</h1>
+    <p id="description">Learning from this will help me improve my games.</p>
+
+    <form id="survey-form">
+
+      <div class="form-item-margin" id="about-you">
+      <label id="name-label" class="display-block" for="name"><span class="required">*</span>Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter your Name" autofocus required>
+      <label id="email-label" class="display-block" for="email"><span class="required">*</span>Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+      <label id="number-label" class="display-block" for="number"><span class="required">*</span>Age:</label>
+      <input id="number" type="number" name="age" min="1" max="100" placeholder="Enter your Age" required>
+    </div>
+<br/>
+      <!-- begin radio buttons-->
+      <fieldset class="form-item-margin" id="favorite-game-options">
+        <legend>What is your favourite game that I made:-</legend>
+        <div>
+        <label for="abate">
+          <input id="abate" type="radio" name="favorite-game" value="Abate" >
+          Abate
+        </label>
+        <label for="wrom">
+          <input id="wrom" type="radio" name="favorite-game" value="Wrom" >
+          Wrom
+        </label>
+        <label for="dusk">
+          <input id="dusk" type="radio" name="favorite-game" value="Dusk" >
+         Dusk
+        </label>
+      </div>
+      </fieldset>
+      <!-- -->
+      <br/>
+      <!-- begin checkboxes -->
+      <fieldset class="form-item-margin" id="favorite-character-options">
+        <legend>Who are your Favorite Characters</legend>
+        <div>
+        <label for="Hippy">
+          <input id="Hippy" type="checkbox" name="favorite-character" value="Hippy">
+          Hippy
+        </label>
+        <label for="Kityy">
+          <input id="Kityy" type="checkbox" name="favorite-character" value="Kityy">
+          Kityy
+        </label>
+        <label for="Bore">
+          <input id="Bore" type="checkbox" name="favorite-character" value="Bore">
+          Bore
+        </label>
+        <label for="Rebel">
+          <input id="Rebel" type="checkbox" name="favorite-character" value="Rebel">
+          Rebel
+        </label>
+        <label for="Vyusian">
+          <input id="Vyusian" type="checkbox" name="favorite-character" value="Vyusian">
+          Vyusian
+        </label>
+        <label for="vision">
+          <input id="vision" type="checkbox" name="favorite-character" value="Vision">
+          Vision
+        </label>
+        <label for="Nico">
+          <input id="Nico" type="checkbox" name="favorite-character" value="Nico">
+          Nico
+        </label>
+        </div>
+      </fieldset>
+      <!-- end checkboxes -->
+<br/>
+      <!-- begin dropdown -->
+      <div class="form-item-margin" id="dropdown">
+      <label for="coolest-website">What's the coolest website: </label>
+      <select id="coolest-website" name="coolest-website">
+        <option value="intfiction" selected>intfiction</option>
+        <option value="itchio">itch io</option>
+        <option value="textadventures">textadventures</option>
+        <option value="ifcomp">ifcomp</option>
+        <option value="spring-thing">spring-thing</option>
+        <option value="introcomp">introcomp</option>
+      </select>
+      </div>
+      <!-- end dropdown -->
+<br/>
+      <div class="form-item-margin" id="textarea">
+      <label class="display-block" for="message">Tell me more about your playing experiences</label>
+      <textarea id="message" name="message" placeholder="Comments, questions, concerns..."></textarea>
+      </div>
+<br/>
+      <button class="form-item-margin" id="submit" type="submit" name="button">Submit</button>
+    </form>
+  </div>
+	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

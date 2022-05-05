@@ -1,0 +1,51 @@
+.main .container #title {
+    text-align: center;
+    font-size: 1.75em;
+    color:#09234c;
+    font-weight: bold;
+  }
+
+  .main .container #description {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    background: lightyellow;
+    padding: 5px;
+    color:#09234c;
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+ tspan {
+    font-size: 0.65em;
+  }
+
+  #legend {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+html {
+    font-family:monospace;
+    text-align:center;
+    color:gray;
+    margin:50px;
+    padding:10px;
+    background: #e0e0e0;
+}
+
+
+

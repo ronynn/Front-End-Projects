@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Technical Documentation: Making a twine game.</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Technical Documentation Page for Twine" />
+  <meta name="keywords" content="twine, tweego, sugarcube, documentation, javascript" />
+  <meta name="author" content="r01nx" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    padding:3%;
+    margin:5%;
+    color:gray;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 17px #a6a6a6,
+    -8px -8px 17px #ffffff;
+  }
+#navbar {
+  height: 100vh;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  float:left;
+}
+
+#title {
+  text-align:center;
+  background-color: #e0e0e0;
+  color: #909090;
+}
+
+.nav-link{
+  text-decoration: none;
+  display: block;
+  padding: 6px;
+  color: violet;
+}
+
+.nav-link:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+#main-doc {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0 1rem;
+}
+
+.section-header{
+ text-align:center;
+ background-color:#e0e0e0;
+ color:#909090;
+ padding:8px;
+ border-radius: 27px;
+ background: #e0e0e0;
+ box-shadow: 8px 8px 17px #a6a6a6,
+ -8px -8px 17px #ffffff;
+}
+
+.main-section article {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  body {
+    display: grid;
+  }
+
+  #navbar {
+    min-height: 400px;
+  }
+
+}
+</style>
+</head>
+<body>
+  <nav id="navbar">
+  <header>
+    <h1 id="title">Twine</h1>
+  </header>
+  <ul>
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#Interface" rel="internal"><li>Interface</li></a>
+    <a class="nav-link" href="#Storyscript" rel="internal"><li>Storyscript</li></a>
+    <a class="nav-link" href="#Styles" rel="internal"><li>Styles</li></a>
+    <a class="nav-link" href="#Javascript" rel="internal"><li>Javascript</li></a>
+    <a class="nav-link" href="#Tweego" rel="internal"><li>Tweego</li></a>
+  </ul>
+</nav>
+<main id="main-doc">
+  <br/>
+  <section class="main-section" id="Introduction">
+    <header class="section-header">
+      Introduction
+    </header>
+    <article>
+      <p>
+        Twine is a visual tool for making interactive fiction.
+      <pre>
+        <code class="javascript">
+  if (objectTaken==true) {initiate rain()};
+      </code>
+      </pre>
+    </article>
+  </section>
+  <section class="main-section" id="Interface">
+    <header class="section-header">
+      Interface
+    </header>
+    <article>
+      <p>
+        The interface is pretty easy to understand. Click on new game, click on the boxes, connnect to one another, you get a game.
+      </p>
+      <p></p>
+       <p></p>
+       <p></p>
+       <p></p>
+       <li></li>
+         <li></li>
+           <li></li>
+             <li></li>
+               <li></li>
+      <pre>
+        <code class="javascript">
+if (game==good) {initiate publish()};
+        </code>
+      </pre>
+     <pre>
+       <code class="javascript">
+exports.myDateTime = function () {
+   return Date();
+};
+       </code>
+     </pre>
+    </article>
+  </section>
+  <section class="main-section" id="Storyscript">
+    <header class="section-header">
+     Storyscript
+    </header>
+    <article>
+      <p>There's sugarcube, harlowe, snowman, and chapbook.
+      </p>
+      <pre>
+        <code class="javascript">
+var http = require('http');
+        </code>
+      </pre>
+    </article>
+  </section>
+  <section class="main-section" id="Styles">
+    <header class="section-header">
+      Styles
+    </header>
+    <article>
+      <p>Different Storyscripts have different styles.
+      </p>
+      <pre>
+        <code class="javascript">
+var fs = require('fs');
+        </code>
+      </pre>
+    </article>
+
+  </section>
+  <section class="main-section" id="Javascript">
+    <header class="section-header">
+      Javascript
+    </header>
+    <article>
+      <p>
+        You can extend your storyscript's features with javascript.
+      </p>
+      <pre>
+        <code class="javascript">
+var url = require('url');
+        </code>
+      </pre>
+    </article>
+  </section>
+  <section class="main-section" id="Tweego">
+    <header class="section-header">
+      Tweego
+    </header>
+    <article>
+      <p>
+      Now this is something interesting, write your entire game with text files and compile with tweego.
+      </p>
+    </article>
+  </section>
+
+</main>
+	<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

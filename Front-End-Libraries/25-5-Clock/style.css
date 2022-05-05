@@ -1,0 +1,134 @@
+
+
+::selection {
+    background-color: #222;
+    color: #efefef;
+}
+
+::-moz-selection {
+    background-color: #222;
+    color: #efefef;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls-wrapper {
+    display: flex;
+}
+
+.control-wrapper {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.control-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-heading {
+    color: #333;
+}
+
+.controls {
+    border: 1px solid gray;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition-duration: 0.25s;
+    user-select: none;
+}
+
+.controls:hover {
+    border-color: gray;
+}
+
+.controls.increment {
+    transform: rotate(90deg);
+}
+
+.controls.decrement {
+    transform: rotate(-90deg);
+}
+
+#session-length,
+#break-length {
+    font-weight: 600;
+}
+
+.timer-wrapper {
+    background: #fff2;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+     background: #e0e0e0;
+     box-shadow: 8px 8px 17px #a6a6a6,
+     -8px -8px 17px #ffffff;
+     border-radius: 27px;
+}
+
+.session-heading h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.session-timer {
+    font-size: 50px;
+}
+
+.session-controls {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.session-controls .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    user-select: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .controls-wrapper {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .control-wrapper {
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+html {
+    text-align:center;
+    color:gray;
+    margin:50px;
+    padding:10px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 17px #a6a6a6,
+     -8px -8px 17px #ffffff;
+    border-radius: 27px;
+}

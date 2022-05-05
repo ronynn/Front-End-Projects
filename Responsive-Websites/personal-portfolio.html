@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Page - r01nx- FCC</title>
+
+    
+    <style>
+
+body {
+  color:gray;
+  padding:30px;
+  margin: 30px;
+  border-radius: 27px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 17px #a6a6a6,
+  -8px -8px 17px #ffffff;
+}
+a {
+    text-decoration: none;
+    color:gray;
+}
+
+#navbar {
+    position:fixed;
+    align-items:center;
+    justify-content: space-between;
+    top:10px;
+    width:50%;
+    z-index: 2;
+  
+}
+#welcome-section {
+  height:100vh;
+}
+
+@media only screen and (max-width: 900px) {
+    .projects-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .project-tile {
+        flex: calc(50% - 40px);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .project-tile {
+        flex: 100%;
+        max-width: 500px;
+    }
+}
+
+    
+    
+    
+    
+    
+    
+    </style>
+    
+    
+    </head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <a class="nav-item nav-header" href="#welcome-section">r01nx</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+        </nav>
+        <div id="welcome-section">
+            <div class="welcome-strips"></div>
+            <div class="welcome-content text-center">
+                <h1>Hi, I am <span class="name">r01nx</span></h1>
+                <h2>A Hobbyist Programmer</h2>
+            </div>
+        </div>
+
+        <div id="projects">
+            <header class="text-center">
+                <h3>Projects are listed below</h3>
+            </header>
+            <div class="projects-wrapper">
+                <div class="project-tile">
+                    <a
+                        href="https://r01nx.github.io/front-end-projects"
+                        target="_blank"
+                    >
+                        <div class="project-name">Survey Form</div>
+                        <div class="project-info">Survey on my web games</div>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a
+                        href="https://r01nx.github.io/front-end-projects"
+                        target="_blank"
+                    >
+                        <div class="project-name">Product Landing Page</div>
+                        <div class="project-info">For Nimble Brass</div>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a
+                        href="https://r01nx.github.io/front-end-projects"
+                        target="_blank"
+                    >
+                        <div class="project-name">Technical Documentation Page</div>
+                        <div class="project-info">Twine Sugarcube-2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="connection-block text-center">
+            <p>
+                Visit
+                <a id="profile-link" href="https://www.github.com/r01nx" target="_blank">My Github</a>
+                for more.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // fixing the test suite for the project
+        const projectName = 'portfolio';
+    </script>
+    <!-- Remove below comment to add the test-suite script -->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

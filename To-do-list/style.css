@@ -1,0 +1,76 @@
+body{
+    text-align: center;
+    color: gray;
+    font-family: monospace;
+    background: #e0e0e0;
+}
+
+#add{
+    border:0;
+    color:gray;
+    padding:10px;
+    margin-left:20px;
+    cursor: pointer;
+    margin-top: 35px;
+    text-align:center;
+}
+
+.remove{
+    margin-right:20px;
+    float:right;
+    clear: both;
+    color:gray;
+    border-radius:16px;
+    width: 60px;
+    height: 20px;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+    line-height: 44px;
+}
+
+#task{
+    width: 320px;
+    height: 30px;
+    margin-left: 17px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: 8px 8px 17px #a6a6a6,
+    -8px -8px 17px #ffffff;
+}
+
+h1{
+    margin-top:30px;
+}
+
+button {
+background: #e0e0e0;
+border: none;
+border-radius: 20px;
+color: #444;
+font-size: 16px;
+text-align: center;
+outline: none;
+cursor: pointer;
+transition: .2s ease-in-out;
+box-shadow: 8px 8px 17px #a6a6a6,
+-8px -8px 17px #ffffff;
+}
+
+button:hover {
+box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+-2px -2px 4px rgba(255, 255, 255, .4),
+2px 2px 2px rgba(255, 255, 255, .05),
+2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+button:active {
+box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+inset -2px -2px 4px rgba(255, 255, 255, .5),
+inset 2px 2px 2px rgba(255, 255, 255, .075),
+inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
