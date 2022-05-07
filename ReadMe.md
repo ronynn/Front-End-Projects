@@ -1,5 +1,6 @@
 [![JavaScript](http://3con14.biz/code/_data/js/intro/js-logo.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+
 A collection of my front-end projects made for practice. The freecodecamp projects took the most time to align with the testing bundle, after that I made a few changes to suit my minimalist neomorphism style preferences.
 
 ### Links to each project:-
