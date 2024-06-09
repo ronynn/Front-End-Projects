@@ -36,16 +36,19 @@ button {
 
 input[type='text'] {
   width: 300px;
+  border: none;
 }
 
 .search-btn {
   cursor: pointer;
   margin-left:10px;
+  border: none;
 }
 
 .random-btn {
   cursor: pointer;
   margin-left: 10px;
+  border: none;
 }
 
 .meals {

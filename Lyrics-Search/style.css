@@ -48,6 +48,7 @@ form input {
 
 form button {
   border-radius: 7px;
+  border: none;
   background: #e0e0e0;
   box-shadow: 8px 8px 17px #a6a6a6,
     -8px -8px 17px #ffffff;
@@ -64,6 +65,7 @@ form button {
   padding:10px;
   color:gray;
 }
+
 
 
 ul.songs {

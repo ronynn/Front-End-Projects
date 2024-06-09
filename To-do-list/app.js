@@ -9,7 +9,13 @@ function get_todos(){
 }
 
 function add(){
-    var task = document.getElementById('task').value;
+    var taskInput = document.getElementById('task');
+    var task = taskInput.value.trim(); // Trim any leading or trailing whitespaces
+
+    if(task === '') {
+        alert('Task cannot be blank. Please enter a valid task.');
+        return false; // Prevent further action with click event
+    }
 
     var todos = get_todos();
     todos.push(task);
@@ -17,7 +23,7 @@ function add(){
 
     show();
     clearDefault();
-    return false; //avoids any futher action with click event
+    return false; // Prevent further action with click event
 }
 
 //clear the task value from input box
@@ -44,7 +50,7 @@ function show(){
     for(var i = 0; i < todos.length; i++){
         html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">Delete</button> </li>';
     };
-    html += '</ul>';
+    html += '<br/></ul>';
  console.log(html);
     document.getElementById('todos').innerHTML = html;
 
